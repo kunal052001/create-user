@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Users</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <a href="/" style="display: inline-block; padding: 10px 20px; color: #ffffff; background-color: #ff0000; text-decoration: none; border-radius: 5px; 
+        font-weight: bold; text-align: center; transition: background-color 0.3s, color 0.3s;">Go to Home</a>
+
+        <h1>All Users</h1>
+
+        <div class="card-grid">
+            <% users.forEach(function(user) { %>
+            <div class="card">
+                <div>
+                    <img src="<%= user.imageUrl || '/images/default-avatar.png' %>" alt="User Image">
+                </div>
+                <h3><%= user.name %></h3>
+                <h5><%= user.email %></h5>
+                <div class="actions">
+                    <a href="/edit/<%= user._id %>">Edit User</a>
+                    <a href="/delete/<%= user._id %>" onclick="return confirm('Are you sure you want to delete this user?');">Delete User</a>
+                </div>
+            </div>
+            <% }); %>
+        </div>
+    </div>
+</body>
+</html>

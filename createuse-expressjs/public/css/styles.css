@@ -1,0 +1,215 @@
+/* **********app.js************ */
+
+/* Basic reset and font setup */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4; /* Light gray background */
+}
+
+/* Navigation styling */
+nav {
+    background-color: #4a90e2; /* Blue background */
+    padding: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-link {
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #e0e0e0; /* Light gray on hover */
+}
+
+/* Form container styling */
+.form-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Shadow for card effect */
+}
+
+/* Heading styling */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form group styling */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    border-color: #4a90e2; /* Blue border on focus */
+    outline: none;
+}
+
+/* Submit button styling */
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #4a90e2; /* Blue background */
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #357abd; /* Darker blue on hover */
+}
+
+/* ....................................................................................................... */
+
+/* *****read..css */
+/* Basic reset and font setup */
+/* Basic reset and font setup */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern sans-serif font */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f3f5; /* Light gray background for a soft look */
+}
+
+/* Container for the page content */
+.container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Title styling */
+h1 {
+    text-align: center;
+    color: #343a40; /* Dark gray color for text */
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    font-family: 'Roboto', sans-serif; /* Different font for a modern touch */
+}
+
+/* Grid container for cards */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+/* Card styling */
+.card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow for depth */
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden; /* Ensure the image doesn't overflow the card */
+}
+
+/* Card hover effect */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Card image styling */
+.card img {
+    width: 100%; /* Full width of the card */
+    height: 200px; /* Fixed height to maintain square shape */
+    object-fit: cover; /* Ensure image covers the square without distortion */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Card heading and subheading styling */
+.card h3 {
+    margin: 0;
+    font-size: 1.4em;
+    color: #212529; /* Darker gray color for better readability */
+    font-family: 'Arial', sans-serif; /* Different font for headings */
+}
+
+.card h5 {
+    margin: 10px 0;
+    color: #6c757d; /* Light gray for subheadings */
+    font-size: 1em;
+    font-family: 'Arial', sans-serif; /* Consistent font for subheadings */
+}
+
+/* Actions links styling */
+.actions a {
+    display: inline-block;
+    margin: 5px;
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #007bff; /* Primary blue background */
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
+}
+
+.actions a:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .card-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 400px) {
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+}
